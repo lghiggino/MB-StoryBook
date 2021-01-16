@@ -1,0 +1,28 @@
+.hero{
+    background: url("./assets/male-boxer-tilted.jpg") center / cover;
+}
+
+.outline{
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+.navbar-item{
+    transition: all .3s;
+}
+
+#clube{
+    background: rgb(72,199,116);
+    background: linear-gradient(126deg, rgba(32,156,238,1) 0%, rgba(72,199,116,1) 45%);
+}    
+
+#fotos{
+    background: rgb(72,199,116);
+    background: linear-gradient(126deg, rgba(72,199,116,1) 0%, rgba(32,156,238,1) 45%);
+} 
+
+.round-border{
+    border-radius: 25px;
+}
+
+
