@@ -1,0 +1,37 @@
+/* BOX ANIMATIONS */
+.box{
+    transform: translateX(800%);
+    transition: transform 0.4s ease-out;
+}
+  
+.box:nth-of-type(even){
+    transform: translateX(-400%);
+}
+  
+.box.show{
+    transform: translateX(0);
+}
+  
+/* SINGLE DIVS ANIMATIONS */
+  
+#four-in-ten{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+
+.dot{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    animation: showing 2.5s alternate; 
+    color: red;
+    border: 1px solid red;
+}
+
+@keyframes showing{
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}

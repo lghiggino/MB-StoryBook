@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 	<link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
 	<link rel='stylesheet' type='text/css' media='screen' href='./css/superset.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='./css/animations.css'>
 	<script src="https://kit.fontawesome.com/33c90e5f6c.js" crossorigin="anonymous"></script>
 	<script src='./js/app.js' defer></script>
 	<script src='./js/animations.js' defer></script>
@@ -15,7 +16,7 @@
 </head>
 <body>
     <!-- HERO -->
-    <section class="hero is-success is-fullheight  mb-3">
+    <section class="hero is-success is-fullheight mb-3">
         <!-- Hero head: will stick at the top -->
         <div class="hero-head">
           <header class="navbar">
@@ -58,8 +59,14 @@
               <div class="container">
 				  <div class="center-chevron">
 					<ul>
-            <li class="has-text-centered is-uppercase has-text-weigth-bold">get started</li>
-						<li class="is-uppercase"><a><i class="fas fa-chevron-down"></i></a></li>
+						<li class="has-text-centered is-uppercase has-text-weigth-bold">get started</li>
+						<li class="is-uppercase">
+							<a class="button is-success" href="#got-a-website-intro">
+								<span class="icon">
+								<i class="fas fa-chevron-down"></i>
+								</span>
+							</a>
+						</li>
 					  </ul>
 				  </div>
               </div>
@@ -69,66 +76,100 @@
     <!-- END OF HERO -->
 
     <main>
-		<section class="section box" id="got-a-website">
+		<!-- TEXT INTRO CARD -->
+		<section class="section box" id="got-a-website-intro">
 			<div class="container">	
 				<div class="columns is-multiline is-vcentered">
-					<div class="column is-4"></div>
+					<div class="column is-4 is-hidden"></div>
 					<!-- START MAIN COLUMN -->
 					<div class="column is-4">
 						<div>
-							<p class="is-size-6">Of 4.66 Billion internet users worldwide 48% search for local business. Those searches render aconversion rate of 80%.</p>
-							<p class="is-size-6">That means that almost 40% of the population in your city will look for YOU on search engines AND make a purchase</p>
-							<p class="is-size-6">My company had great reputation with its clientele, but when people searched for us online, they found nothing</p>
+							<p class="is-size-6 mb-3">Of 4.66 Billion internet users worldwide 48% search for local business. Those searches render a conversion rate of 80%.</p>
+							<p class="is-size-6 mb-3">That means that almost 40% of the population in your city will look for YOU on search engines AND make a purchase</p>
+							<div id="four-in-ten"> 
+								<div class="dot"></div>
+								<div class="dot anim"><i class="fas fa-dollar-sign"></i></div>
+								<div class="dot"></div>
+								<div class="dot anim"><i class="fas fa-dollar-sign"></i></div>
+								<div class="dot"></div>
+								<div class="dot anim"><i class="fas fa-dollar-sign"></i></div>
+								<div class="dot"></div>
+								<div class="dot anim"><i class="fas fa-dollar-sign"></i></div>
+								<div class="dot"></div>
+								<div class="dot"></div>
+							</div>
+							<p class="is-size-6 mb-3">My company had great reputation with its clientele, but when people searched for us online, they found nothing</p>
 							<p class="is-size-4">so....</p>
 						</div>	
 					</div>
-					<div class="column is-4"></div>
+					<div class="column is-4 is-hidden"></div>
 				</div>
 			</div>
 		</section>
+		<!-- END OF TEXT INTRO CARD -->
 
-    <!-- CARD SECTION -->
-    <section class="section box" id="got-a-website">
-   		<div class="container">	
-    		<div class="columns is-multiline is-vcentered">
-				<div class="column is-4"></div>
-				<!-- START MAIN COLUMN -->
-    			<div class="column is-4">
-					<!-- LEFT ARROW -->
-					<div class="left-arrow">
-						<div class="square-left mt-4">
-							<p class="has-text-centered has-text-white">no</p>
+		<!-- CARD SECTION -->
+		<section class="section box" id="got-a-website">
+			<div class="container">	
+				<div class="columns is-multiline is-vcentered">
+					<div class="column is-4 is-hidden"></div>
+					<!-- START MAIN COLUMN -->
+					<div class="column is-4">
+						<!-- LEFT ARROW -->
+						<div class="left-arrow">
+							<div class="square-left mt-4">
+								<p class="has-text-centered has-text-white">no</p>
+							</div>
+							<div class="triangle-left"></div>
 						</div>
-						<div class="triangle-left"></div>
-					</div>
-					<!-- END OF LEFT NO ARROW -->
-					<!-- START DIAMOND AND TEXT -->
-					<div class="diamond">
-						<h2 class="title has-text-centered has-text-white"><i class="fas fa-laptop diamond-inner-shape"></i></h2>
-					</div>
-					<div>
-						<!-- <p class="is-size-6">Of 4.66 Billion of internet user worldwide 48% search for local business with a conversion rate of 80%.</p>
-						<p class="is-size-6">That means that almost 40% of the population in your city will look for YOU on search engines AND make a purchase</p> -->
-						<h2 class="title has-text-centered">Do you have a website?</h2>
-					</div>
-					<!-- END DIAMOND AND TEXT -->
-					<!-- START DOWN ARROW -->
-					<div class="down-arrow">
-						<div class="square mt-4">
-							<p class="has-text-centered has-text-white">yes</p>
+						<!-- END OF LEFT NO ARROW -->
+						<!-- START DIAMOND AND TEXT -->
+						<div class="diamond">
+							<h2 class="title has-text-centered has-text-white"><i class="fas fa-laptop diamond-inner-shape"></i></h2>
 						</div>
-						<div class="triangle-down"></div>
+						<div>
+							<!-- <p class="is-size-6">Of 4.66 Billion of internet user worldwide 48% search for local business with a conversion rate of 80%.</p>
+							<p class="is-size-6">That means that almost 40% of the population in your city will look for YOU on search engines AND make a purchase</p> -->
+							<h2 class="title has-text-centered">Do you have a website?</h2>
+						</div>
+						<!-- END DIAMOND AND TEXT -->
+						<!-- START DOWN ARROW -->
+						<div class="down-arrow" id="no-website">
+							<div class="square mt-4">
+								<p class="has-text-centered has-text-white">yes</p>
+							</div>
+							<div class="triangle-down"></div>
+						</div>
 					</div>
+					<!-- END MAIN COLUMN -->
+					<div class="column is-4 is-hidden"></div>
 				</div>
-				<!-- END MAIN COLUMN -->
-				<div class="column is-4"></div>
-        	</div>
-      	</div> 
-    </section>
-    <!-- END OF CARD -->
+			</div> 
+		</section>
+		<!-- END OF CARD -->
+
+		<!-- TEXT INTRO CARD -->
+		<section class="section box" id="got-analytics-installed-intro">
+			<div class="container">	
+				<div class="columns is-multiline is-vcentered">
+					<div class="column is-4 is-hidden"></div>
+					<!-- START MAIN COLUMN -->
+					<div class="column is-4">
+						<div>
+							<p class="is-size-6 mb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A nihil hic dolorum laboriosam! Explicabo asperiores id odit incidunt quia, reprehenderit, maiores nobis obcaecati at atque ipsum dicta eveniet a. Rerum ipsa voluptate tenetur odio, perspiciatis iste molestias. Voluptas, molestiae possimus!</p>
+							<p class="is-size-6 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, alias aspernatur. Quas nihil voluptas sequi consequuntur quisquam ipsa quasi sint!</p>
+							<p class="is-size-6 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium facilis quos, asperiores ea alias eos.</p>
+							<p class="is-size-4">so....</p>
+						</div>	
+					</div>
+					<div class="column is-4 is-hidden"></div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF TEXT INTRO CARD -->
 
     <!-- CARD SECTION -->
-    <section class="section box" id="analytics-installed">
+    <section class="section box" id="got-analytics-installed">
 		<div class="container">	
 		 <div class="columns is-multiline is-vcentered">
 			 <div class="column is-4"></div>
@@ -144,7 +185,7 @@
 				 <!-- END OF LEFT NO ARROW -->
 				 <!-- START DIAMOND AND TEXT -->
 				 <div class="diamond">
-					 <h2 class="title has-text-centered has-text-white"><i class="fas fa-laptop diamond-inner-shape"></i></h2>
+					 <h2 class="title has-text-centered has-text-white"><i class="fas fa-code diamond-inner-shape"></i></h2>
 				 </div>
 				 <div>
 					 <h2 class="title has-text-centered">Is analytics installed?</h2>
