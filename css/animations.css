@@ -2,10 +2,11 @@
 .box{
     transform: translateX(800%);
     transition: transform 0.4s ease;
+    box-shadow: 0 0 0 rgba(255,255,255,1);
 }
   
-.box:nth-of-type(even){
-    transform: translateX(-400%);
+.box:nth-of-type(odd){
+    transform: translateX(-800%);
 }
   
 .box.show{
