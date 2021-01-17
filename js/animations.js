@@ -19,3 +19,22 @@ function checkBoxes(){
     })
 }
 
+
+
+console.log("Red Arrows are on")
+
+const redArrows = document.querySelectorAll(".left-arrow")
+
+redArrows.forEach(arrow => {
+    //anymation event
+    arrow.addEventListener("click", () => {
+        console.log(arrow)
+        // let nextSiblingForm = arrow.parentElement.nextSibling.nextElementSibling.firstElementChild
+        // nextSiblingForm.classList.toggle("is-hidden")
+    })
+
+
+   
+})
+
+
