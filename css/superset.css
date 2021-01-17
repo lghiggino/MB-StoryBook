@@ -76,11 +76,47 @@ body{
 .left-arrow{
   position: absolute;
   top: -5px;
-  left: 40px;
+  left: 10%;
   margin: 0 auto;
   width: 30%;
   transform: rotateZ(90deg);
   cursor: pointer;
+}
+
+@media (max-width: 1920px){
+  .left-arrow{
+    left: 28%;
+  }
+}
+
+@media (max-width: 1216px){
+  .left-arrow{
+    left: 25%;
+  }
+}
+
+@media (max-width: 876px){
+  .left-arrow{
+    left: 23%;
+  }
+}
+
+@media (max-width: 680px){
+  .left-arrow{
+    left: 19%;
+  }
+}
+
+@media (max-width: 520px){
+  .left-arrow{
+    left: 14%;
+  }
+}
+
+@media (max-width: 400px){
+  .left-arrow{
+    left: 10%;
+  }
 }
 
 .square-left > p{

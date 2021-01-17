@@ -11,8 +11,8 @@
 	<link rel='stylesheet' type='text/css' media='screen' href='./css/animations.css'>
 	<script src="https://kit.fontawesome.com/33c90e5f6c.js" crossorigin="anonymous"></script>
 	<script src='./js/app.js' defer></script>
-  <script src='./js/animations.js' defer></script>
-  <script src='./js/analytics.js' defer></script>
+	<script src='./js/animations.js' defer></script>
+	<script src='./js/analytics.js' defer></script>
 </head>
 </head>
 <body>
@@ -85,7 +85,7 @@
 						</li>
 						<li class="is-uppercase">
 							<a class="button is-danger" href="#">
-								<span class="icon"> Tap or Click on red items  </span>
+								<span class="icon"> Tap or Click on red</span>
 							</a>
 						</li>
 					  </ul>
@@ -102,7 +102,7 @@
 			<div class="container">	
 				<div class="columns is-multiline is-vcentered">
 					<!-- START MAIN COLUMN -->
-					<div class="column is-4 is-offset-4">
+					<div class="column is-6 is-offset-3">
 						<div>
 							<p class="is-size-6 mb-3">Of 4.66 Billion internet users worldwide 48% search for local business. Those searches render a conversion rate of 80%.</p>
 							<p class="is-size-6 mb-3">That means that almost 40% of the population in your city will look for YOU on search engines AND make a purchase</p>
@@ -132,7 +132,7 @@
 			<div class="container">	
 				<div class="columns is-multiline is-vcentered">
 					<!-- START MAIN COLUMN -->
-					<div class="column is-4 is-offset-4">
+					<div class="column is-6 is-offset-3">
 						<!-- LEFT ARROW -->
 						<div class="left-arrow">
 							<div class="square-left mt-4">
@@ -172,25 +172,25 @@
 				<div class="columns is-multiline is-vcentered">
 					<!-- <div class="column is-4 "></div> -->
 						<!-- START MAIN COLUMN -->
-						<div class="column is-4 is-offset-4">
+						<div class="column is-6 is-offset-3">
 							<div class="">
 								<h4 class="subtitle"> WBO - DOUGLAS ATAÍDE #14 vs. RYOTA MURATA #8</h4>
 								<div class="field">
 									<div class="control">
 									<label class="checkbox">
-										<input type="checkbox">
+										<input type="checkbox" id="firstCheckId" name="firstCheckName" value="firstCheckValue">
 										I agree to the <a href="#">terms and conditions</a>
 									</label>
 									<label class="checkbox">
-										<input type="checkbox">
+										<input type="checkbox" id="secondCheckId" name="secondCheckName" value="secondCheckValue">
 										I agree to the <a href="#">terms and conditions</a>
 									</label>
 									<label class="checkbox">
-										<input type="checkbox">
+										<input type="checkbox" id="thirdCheckId" name="thirdCheckName" value="thirdCheckValue">
 										I agree to the <a href="#">terms and conditions</a>
 									</label>
 									<label class="checkbox">
-										<input type="checkbox">
+										<input type="checkbox" id="fourthCheckId" name="fourthCheckName" value="fourthCheckValue">
 										I agree to the <a href="#">terms and conditions</a>
 									</label>
 									</div>
@@ -199,10 +199,7 @@
 							  <!-- BULMA BUTTON -->
 							  	<div class="field is-grouped">
 									<div class="control">
-								  		<button class="button is-link">Submit</button>
-									</div>
-									<div class="control">
-								  		<button class="button is-link is-light">Cancel</button>
+								  		<button class="button is-link" id="do-you-have-a-website-submit">Submit</button>
 									</div>
 							  	</div>	
 							</div>
@@ -220,7 +217,7 @@
 			<div class="container">	
 				<div class="columns is-multiline is-vcentered">
 					<!-- START MAIN COLUMN -->
-					<div class="column is-4 is-offset-4">
+					<div class="column is-6 is-offset-3">
 						<div>
 							<p class="is-size-6 mb-3">Analytics this analytics that, sit amet consectetur adipisicing elit. A nihil hic dolorum laboriosam! Explicabo asperiores id odit incidunt quia, reprehenderit, maiores nobis obcaecati at atque ipsum dicta eveniet a. Rerum ipsa voluptate tenetur odio, perspiciatis iste molestias. Voluptas, molestiae possimus!</p>
 							<p class="is-size-6 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, alias aspernatur. Quas nihil voluptas sequi consequuntur quisquam ipsa quasi sint!</p>
@@ -237,10 +234,9 @@
 		<section class="section box" id="got-analytics-installed">
 			<div class="container">	
 			<div class="columns is-multiline is-vcentered">
-				<div class="column is-4"></div>
 				<!-- START MAIN COLUMN -->
-				<div class="column is-4">
-				<!-- LEFT ARROW -->
+				<div class="column is-6 is-offset-3">
+					<!-- LEFT ARROW -->
 					<div class="left-arrow">
 						<div class="square-left mt-4">
 							<p class="has-text-centered has-text-white">no</p>
@@ -250,10 +246,11 @@
 					<!-- END OF LEFT NO ARROW -->
 					<!-- START DIAMOND AND TEXT -->
 					<div class="diamond">
-						<h2 class="title has-text-centered has-text-white"><i class="fas fa-code diamond-inner-shape"></i></h2>
+						<h2 class="title has-text-centered has-text-white"><i class="fas fa-laptop diamond-inner-shape"></i></h2>
 					</div>
 					<div>
-						<h2 class="title has-text-centered">Is analytics installed?</h2>
+						<!-- <p class="is-size-6">Of 4.66 Billion of internet user worldwide 48% search for local business with a conversion rate of 80%.</p>-->
+						<h2 class="title has-text-centered">Is Analytics Installed?</h2>
 					</div>
 					<!-- END DIAMOND AND TEXT -->
 					<!-- START DOWN ARROW -->
@@ -265,7 +262,6 @@
 					</div>
 				</div>
 				<!-- END MAIN COLUMN -->
-				<div class="column is-4"></div>
 			</div>
 		</div> 
 	</section>
@@ -277,7 +273,7 @@
 			<div class="columns is-multiline is-vcentered">
 				<!-- <div class="column is-4 "></div> -->
 					<!-- START MAIN COLUMN -->
-					<div class="column is-4 is-offset-4">
+					<div class="column is-6 is-offset-3">
 						<div class="">
 							<h4 class="subtitle"> WBO - DOUGLAS ATAÍDE #14 vs. RYOTA MURATA #8</h4>
 							<div class="field">
@@ -323,7 +319,7 @@
 		<div class="container">	
 			<div class="columns is-multiline is-vcentered">
 				<!-- START MAIN COLUMN -->
-				<div class="column is-4 is-offset-4">
+				<div class="column is-6 is-offset-3">
 					<div>
 						<p class="is-size-6 mb-3">An effective website is ... sit amet consectetur adipisicing elit. A nihil hic dolorum laboriosam! Explicabo asperiores id odit incidunt quia, reprehenderit, maiores nobis obcaecati at atque ipsum dicta eveniet a. Rerum ipsa voluptate tenetur odio, perspiciatis iste molestias. Voluptas, molestiae possimus!</p>
 						<p class="is-size-6 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, alias aspernatur. Quas nihil voluptas sequi consequuntur quisquam ipsa quasi sint!</p>
@@ -340,7 +336,7 @@
 		<div class="container">	
 			<div class="columns is-multiline is-vcentered">
 				<!-- START MAIN COLUMN -->
-				<div class="column is-4 is-offset-4">
+				<div class="column is-6 is-offset-3">
 					<div>
 						<p class="subtitle has-text-centered"> Here is a checklist for you: </p>
 						<ul class="has-text-left">
@@ -365,7 +361,7 @@
 		<div class="container">	
 			<div class="columns is-multiline is-vcentered">
 				<!-- START MAIN COLUMN -->
-				<div class="column is-4 is-offset-4">
+				<div class="column is-6 is-offset-3">
 					<!-- LEFT ARROW -->
 					<div class="left-arrow">
 						<div class="square-left mt-4">
@@ -402,7 +398,7 @@
 			<div class="columns is-multiline is-vcentered">
 				<!-- <div class="column is-4 "></div> -->
 					<!-- START MAIN COLUMN -->
-					<div class="column is-4 is-offset-4">
+					<div class="column is-6 is-offset-3">
 						<div class="">
 							<h4 class="subtitle"> WBO - DOUGLAS ATAÍDE #14 vs. RYOTA MURATA #8</h4>
 							<div class="field">
@@ -448,7 +444,7 @@
 		<div class="container">	
 			<div class="columns is-multiline is-vcentered">
 				<!-- START MAIN COLUMN -->
-				<div class="column is-4 is-offset-4">
+				<div class="column is-6 is-offset-3">
 					<div>
 						<p class="is-size-6 mb-3">A credible website this and that ... sit amet consectetur adipisicing elit. Explicabo asperiores id odit incidunt quia, reprehenderit, maiores nobis obcaecati at atque ipsum dicta eveniet a. Rerum ipsa voluptate tenetur odio, perspiciatis iste molestias. Voluptas, molestiae possimus!</p>
 						<p class="is-size-6 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, alias aspernatur. Quas nihil voluptas sequi consequuntur quisquam ipsa quasi sint!</p>
@@ -465,7 +461,7 @@
 		<div class="container">	
 			<div class="columns is-multiline is-vcentered">
 				<!-- START MAIN COLUMN -->
-				<div class="column is-4 is-offset-4">
+				<div class="column is-6 is-offset-3">
 					<div>
 						<p class="subtitle has-text-centered"> Here is another checklist for you: </p>
 						<ul class="has-text-left">
@@ -490,7 +486,7 @@
 		<div class="container">	
 			<div class="columns is-multiline is-vcentered">
 				<!-- START MAIN COLUMN -->
-				<div class="column is-4 is-offset-4">
+				<div class="column is-6 is-offset-3">
 					<!-- LEFT ARROW -->
 					<div class="left-arrow">
 						<div class="square-left mt-4">
@@ -527,7 +523,7 @@
 			<div class="columns is-multiline is-vcentered">
 				<!-- <div class="column is-4 "></div> -->
 					<!-- START MAIN COLUMN -->
-					<div class="column is-4 is-offset-4">
+					<div class="column is-6 is-offset-3">
 						<div class="">
 							<h4 class="subtitle"> WBO - DOUGLAS ATAÍDE #14 vs. RYOTA MURATA #8</h4>
 							<div class="field">
@@ -573,7 +569,7 @@
 		<div class="container">	
 			<div class="columns is-multiline is-vcentered">
 				<!-- START MAIN COLUMN -->
-				<div class="column is-4 is-offset-4">
+				<div class="column is-6 is-offset-3">
 					<!-- LEFT ARROW -->
 					<div class="left-arrow">
 						<div class="square-left mt-4">
@@ -612,7 +608,7 @@
 			<div class="columns is-multiline is-vcentered">
 				<!-- <div class="column is-4 "></div> -->
 					<!-- START MAIN COLUMN -->
-					<div class="column is-4 is-offset-4">
+					<div class="column is-6 is-offset-3">
 						<div class="">
 							<h4 class="subtitle"> WBO - DOUGLAS ATAÍDE #14 vs. RYOTA MURATA #8</h4>
 							<div class="field">
