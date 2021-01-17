@@ -28,13 +28,9 @@ const redArrows = document.querySelectorAll(".left-arrow")
 redArrows.forEach(arrow => {
     //anymation event
     arrow.addEventListener("click", () => {
-        console.log(arrow)
-        // let nextSiblingForm = arrow.parentElement.nextSibling.nextElementSibling.firstElementChild
-        // nextSiblingForm.classList.toggle("is-hidden")
+        let nextSiblingSection = arrow.parentElement.parentElement.parentElement.parentElement.nextElementSibling;
+        nextSiblingSection.classList.toggle("is-hidden")
     })
-
-
-   
 })
 
 
