@@ -30,6 +30,9 @@ redArrows.forEach(arrow => {
     arrow.addEventListener("click", () => {
         let nextSiblingSection = arrow.parentElement.parentElement.parentElement.parentElement.nextElementSibling;
         nextSiblingSection.classList.toggle("is-hidden")
+        
+        let currentSection = arrow.parentElement.parentElement.parentElement.parentElement
+        currentSection.classList.add("section-spin")
     })
 })
 

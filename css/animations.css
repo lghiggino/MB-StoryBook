@@ -48,3 +48,14 @@
     from {transform: scale(0);}
     to {transform: scale(1);}
 }
+
+@keyframes spin{
+    from {transform: rotateZ(0deg);}
+    to {transform: rotateZ(90deg);}
+}
+
+
+.section-spin{
+    background-color: teal;
+    animation: spin 2.5s alternate; 
+}
