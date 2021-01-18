@@ -1,24 +1,7 @@
 console.log("Boxes animation are on boxes.js")
 
 const boxes = document.querySelectorAll(".box")
-
 window.addEventListener("scroll", checkBoxes)
-window.addEventListener("scroll", () => {
-    let windowMaxScrollY = window.scrollMaxY
-    let currentScrollY = window.scrollY
-    console.log(`${currentScrollY} de ${windowMaxScrollY}`)
-    //o valor the scrollY é independente do device
-    if (scrollY <= 800){
-        document.querySelector("body").style.backgroundColor = "white";
-    } else if (scrollY > 800 && scrollY <= 1600){
-        document.querySelector("body").style.backgroundColor = "teal";
-    } else if (scrollY > 1600 && scrollY <= 2400){
-        document.querySelector("body").style.backgroundColor = "yellow";
-    } else if (scrollY > 2400 && scrollY <= 3200){
-        document.querySelector("body").style.backgroundColor = "pink";
-    }
-})
-
 checkBoxes()
 
 function checkBoxes(){
@@ -30,6 +13,23 @@ function checkBoxes(){
             box.classList.add("show");
         }else {
             box.classList.remove("show");
+        }
+    })
+}
+
+const opacity = document.querySelectorAll(".opacity")
+window.addEventListener("scroll", gainOpacity)
+gainOpacity()
+
+function gainOpacity(){
+    const triggerBottom = window.innerHeight / 7 * 4;
+    opacity.forEach(opc => {
+        const boxTop = opc.getBoundingClientRect().top;
+        
+        if (boxTop < triggerBottom){
+            opc.classList.add("full");
+        }else {
+            opc.classList.remove("full");
         }
     })
 }
@@ -49,8 +49,12 @@ redArrows.forEach(arrow => {
 
         let nextSiblingSection = arrow.parentElement.parentElement.parentElement.parentElement.nextElementSibling;
         // The timing function should be CSS
-        setTimeout( () => {nextSiblingSection.classList.toggle("is-hidden")}, 1500)    
-        
+        // setTimeout( () => {nextSiblingSection.classList.toggle("is-hidden")}, 1500)   
+        // form shows with the addition of oppacity + full classes
+        nextSiblingSection.classList.toggle("is-hidden")
+        nextSiblingSection.classList.toggle("opacity")
+        nextSiblingSection.classList.toggle("full")
+
     })
 })
 
