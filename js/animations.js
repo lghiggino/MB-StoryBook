@@ -28,11 +28,14 @@ const redArrows = document.querySelectorAll(".left-arrow")
 redArrows.forEach(arrow => {
     //anymation event
     arrow.addEventListener("click", () => {
-        let nextSiblingSection = arrow.parentElement.parentElement.parentElement.parentElement.nextElementSibling;
-        nextSiblingSection.classList.toggle("is-hidden")
         
         let currentSection = arrow.parentElement.parentElement.parentElement.parentElement
-        currentSection.classList.add("section-spin")
+        currentSection.classList.toggle("section-spin")
+
+        let nextSiblingSection = arrow.parentElement.parentElement.parentElement.parentElement.nextElementSibling;
+        // The timing function should be CSS
+        setTimeout( () => {nextSiblingSection.classList.toggle("is-hidden")}, 1500)    
+        
     })
 })
 

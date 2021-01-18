@@ -18,30 +18,14 @@ tabs.forEach(tab => {
     });
 });
 
-// Conquistas Dropdown
-// const dropdownConquistas = document.querySelector("#dropdown-conquistas")
-// const dropdownConquistasItens = document.querySelectorAll(".dropdown-item") 
-// const dropdownConquistasDivs = document.querySelectorAll(".tall")
-// const dropdownTile = document.querySelector("#dropdown-tile")
+//INSIDE THE SUBMIT BUTTONS
 
-// dropdownConquistas.addEventListener("click", () => {
-//     dropdownConquistas.classList.toggle("is-active");
-// })
+// Collect the checkbox checks 
+// Collect the textInputs values
+// Collect the textArea values
 
-// dropdownConquistasItens.forEach(item => {
-//     item.addEventListener("click", () => {
-//         const year = item.dataset.year
-//         //console.log(year)
-//         dropdownConquistasDivs.forEach(div => {
-//             if(div.getAttribute("id") === year){
-//                 div.classList.remove("is-hidden");
-//             }else {
-//                 div.classList.add("is-hidden")
-//             }
-//         })
-//     })
-// })
-    
+
+
 const firstDiamondButton = document.querySelector("#do-you-have-a-website-submit");
 const firstCheckIdButton = document.querySelector("#firstCheckId");
 const secondCheckIdButton = document.querySelector("#secondCheckId" );

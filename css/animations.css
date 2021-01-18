@@ -3,6 +3,7 @@
     transform: translateX(800%);
     transition: transform 0.4s ease;
     box-shadow: 0 0 0 rgba(255,255,255,1);
+    background-color: transparent;
 }
   
 .box:nth-of-type(odd){
@@ -48,14 +49,20 @@
     from {transform: scale(0);}
     to {transform: scale(1);}
 }
+/* END OF DOTS */
 
+/* RED ARROW SPIN */
 @keyframes spin{
     from {transform: rotateZ(0deg);}
-    to {transform: rotateZ(90deg);}
+    to {transform: rotateZ(-90deg);}
 }
 
-
-.section-spin{
-    background-color: teal;
-    animation: spin 2.5s alternate; 
+.section.box.section-spin{
+    transform: rotateZ(-90deg);
+    animation: spin 1.5s ease-in-out; 
+    animation-iteration-count: 1;
+    overflow: hidden;
 }
+
+/* END OF RED ARROW SPIN */
+
