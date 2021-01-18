@@ -76,8 +76,9 @@ const fourthCheckIdButton = document.querySelector("#fourthCheckId");
 
 firstDiamondButton.addEventListener("click", () => {
    console.log(
-    firstCheckIdButton.checked,
-    secondCheckIdButton.checked,
-    thirdCheckIdButton.checked, 
-    fourthCheckIdButton.checked) 
+    firstCheckIdButton.name, firstCheckIdButton.checked,
+    secondCheckIdButton.name, secondCheckIdButton.checked,
+    thirdCheckIdButton.name, thirdCheckIdButton.checked, 
+    fourthCheckIdButton.name, fourthCheckIdButton.checked,
+   ) 
 })
