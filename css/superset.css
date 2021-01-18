@@ -50,6 +50,10 @@ body{
   z-index: 1;
 }
 
+.diamond-inner-shape.offset{
+  left: -17px;
+}
+
 .split{
   display: flex;
   flex-direction: row;
