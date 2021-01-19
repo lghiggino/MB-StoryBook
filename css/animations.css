@@ -25,6 +25,14 @@
     transform: translateX(0);
 }
 
+.para{
+    transform: translateX(-800%);
+    transition: transform 0.6s ease-in;
+}
+
+.para.show{
+    transform: translateX(0);
+}
 
 
 /* Opacity animation */
