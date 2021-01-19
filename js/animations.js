@@ -34,6 +34,11 @@ function gainOpacity(){
     })
 }
 
+window.addEventListener("scroll", () => {
+    console.log(window.scrollY)
+    console.log(window.scrollMaxY)
+})
+
 
 
 console.log("Red Arrows are on")

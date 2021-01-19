@@ -5,14 +5,29 @@
     box-shadow: 0 0 0 rgba(255,255,255,1);
     background-color: transparent;
 }
-  
-.box:nth-of-type(odd){
+
+.box.left{
     transform: translateX(-800%);
 }
+
+.box.right{
+    transform: translateX(800%);
+}
   
-.box.show{
+/* .box:nth-of-type(odd){
+    transform: translateX(-800%);
+} */
+  
+.box.show,
+.box.left.show,
+.box.right.show
+{
     transform: translateX(0);
 }
+
+
+
+/* Opacity animation */
 
 .opacity{
     opacity: 0;
