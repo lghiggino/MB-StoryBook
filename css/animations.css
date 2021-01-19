@@ -14,10 +14,6 @@
     transform: translateX(800%);
 }
   
-/* .box:nth-of-type(odd){
-    transform: translateX(-800%);
-} */
-  
 .box.show,
 .box.left.show,
 .box.right.show
@@ -27,7 +23,7 @@
 
 .para{
     transform: translateX(-800%);
-    transition: transform 0.6s ease-in;
+    transition: transform 0.7s ease-in;
 }
 
 .para.show{
@@ -43,7 +39,7 @@
 
 .opacity.full{
     opacity: 1;
-    animation: blossom 1.5s alternate; 
+    animation: blossom 1s alternate; 
 }
 
 @keyframes blossom{
@@ -51,6 +47,19 @@
     to {opacity: 1;}
 }
 
+/* RED ARROW SECTION SPIN */
+@keyframes spin{
+    from {transform: rotateZ(0deg);}
+    to {transform: rotateZ(-90deg);}
+}
+
+.section.box.section-spin{
+    transform: rotateZ(-90deg);
+    animation: spin 1.5s ease-in-out; 
+    animation-iteration-count: 1;
+    overflow: hidden;
+}
+/* END OF RED ARROW SPIN */
 
   
 /* SINGLE DIVS ANIMATIONS 
@@ -90,18 +99,4 @@
 }
 /* END OF DOTS */
 
-/* RED ARROW SPIN */
-@keyframes spin{
-    from {transform: rotateZ(0deg);}
-    to {transform: rotateZ(-90deg);}
-}
-
-.section.box.section-spin{
-    transform: rotateZ(-90deg);
-    animation: spin 1.5s ease-in-out; 
-    animation-iteration-count: 1;
-    overflow: hidden;
-}
-
-/* END OF RED ARROW SPIN */
 

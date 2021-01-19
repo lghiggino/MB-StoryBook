@@ -146,3 +146,22 @@ body{
 }
 /* END OF FLOWCHART SHAPES */
 
+/* PARALLAX IMAGES */
+.bgimg-2{
+  background-image: url("../assets/hero-parallax.png");
+  min-height: 20vh;
+  margin: 0 auto;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 2rem 0 1.5rem;
+  border-radius: 5px;
+}
+
+/* .bgimg-2.box.show{
+  position: ;
+} */
+
+/* PARALLAX EFFECT ON THE SECTION */
+.position-relative-div{
+  position: relative;
+}

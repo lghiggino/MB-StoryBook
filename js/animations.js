@@ -5,7 +5,7 @@ window.addEventListener("scroll", checkBoxes)
 checkBoxes()
 
 function checkBoxes(){
-    const triggerBottom = window.innerHeight / 7 * 4;
+    const triggerBottom = window.innerHeight / 5.5 * 4;
     boxes.forEach(box => {
         const boxTop = box.getBoundingClientRect().top;
         
@@ -22,7 +22,7 @@ window.addEventListener("scroll", gainOpacity)
 gainOpacity()
 
 function gainOpacity(){
-    const triggerBottom = window.innerHeight / 7 * 4;
+    const triggerBottom = window.innerHeight / 5.5 * 4;
     opacity.forEach(opc => {
         const boxTop = opc.getBoundingClientRect().top;
         
@@ -39,7 +39,7 @@ window.addEventListener("scroll", paraShow)
 paraShow()
 
 function paraShow(){
-    const triggerBottom = window.innerHeight / 7 * 4;
+    const triggerBottom = window.innerHeight / 5.5 * 4;
     paras.forEach(para => {
         const boxTop = para.getBoundingClientRect().top;
         
