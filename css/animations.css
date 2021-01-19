@@ -23,7 +23,7 @@
 
 .para{
     transform: translateX(-800%);
-    transition: transform 0.7s ease-in;
+    transition: transform 0.8s ease-in-out;
 }
 
 .para.show{
@@ -39,7 +39,7 @@
 
 .opacity.full{
     opacity: 1;
-    animation: blossom 1s alternate; 
+    animation: blossom 1.5s alternate; 
 }
 
 @keyframes blossom{

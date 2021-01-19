@@ -148,8 +148,8 @@ body{
 
 /* PARALLAX IMAGES */
 .bgimg{
-  
-  min-height: 20vh;
+  position: relative;
+  min-height: 50vh;
   margin: 0 auto;
   background-size: cover;
   background-attachment: fixed;
