@@ -147,14 +147,30 @@ body{
 /* END OF FLOWCHART SHAPES */
 
 /* PARALLAX IMAGES */
-.bgimg-2{
-  background-image: url("../assets/hero-parallax.png");
+.bgimg{
+  
   min-height: 20vh;
   margin: 0 auto;
   background-size: cover;
   background-attachment: fixed;
   margin: 2rem 0 1.5rem;
   border-radius: 5px;
+}
+
+.bgimg.image-1{
+  background-image: url("../assets/pexels-negative-space-34578.jpg");
+}
+
+.bgimg.image-2{
+  background-image: url("../assets/pexels-burst-374016.jpg");
+}
+
+.bgimg.image-3{
+  background-image: url("../assets/pexels-canva-studio-3194519.jpg");
+}
+
+.bgimg.image-4{
+  background-image: url("../assets/pexels-pixabay-258160.jpg");
 }
 
 /* .bgimg-2.box.show{

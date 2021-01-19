@@ -58,9 +58,7 @@ const allSections = document.querySelectorAll("section")
 
 
 console.log("Red Arrows are on")
-
 const redArrows = document.querySelectorAll(".left-arrow")
-
 redArrows.forEach(arrow => {
     //anymation event
     arrow.addEventListener("click", () => {
