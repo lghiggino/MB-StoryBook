@@ -1,54 +1,30 @@
 console.log("Boxes animation are on boxes.js")
 
-const boxes = document.querySelectorAll(".box")
-window.addEventListener("scroll", checkBoxes)
-checkBoxes()
+window.addEventListener("scroll", scrollY)
+scrollY()
 
-function checkBoxes(){
-    const triggerBottom = window.innerHeight / 5.5 * 4;
-    boxes.forEach(box => {
-        const boxTop = box.getBoundingClientRect().top;
-        
-        if (boxTop < triggerBottom){
-            box.classList.add("show");
-        }else {
-            box.classList.remove("show");
-        }
-    })
-}
+function scrollY(){
+    const triggerBottom = window.innerHeight / 5.3 * 4;
 
-const opacity = document.querySelectorAll(".opacity")
-window.addEventListener("scroll", gainOpacity)
-gainOpacity()
+    const boxes = document.querySelectorAll(".box")
+    const paras = document.querySelectorAll(".para");
+    const opacity = document.querySelectorAll(".opacity");
 
-function gainOpacity(){
-    const triggerBottom = window.innerHeight / 5.5 * 4;
-    opacity.forEach(opc => {
-        const boxTop = opc.getBoundingClientRect().top;
-        
-        if (boxTop < triggerBottom){
-            opc.classList.add("full");
-        }else {
-            opc.classList.remove("full");
-        }
-    })
-}
+    function animate(classSelector, className){
+        classSelector.forEach(item => {
+            const itemTop = item.getBoundingClientRect().top;
 
-const paras = document.querySelectorAll(".para")
-window.addEventListener("scroll", paraShow)
-paraShow()
+            if (itemTop < triggerBottom){
+                item.classList.add(className)
+            } else{
+                item.classList.remove(className)
+            }
+        })
+    }
 
-function paraShow(){
-    const triggerBottom = window.innerHeight / 5.5 * 4;
-    paras.forEach(para => {
-        const boxTop = para.getBoundingClientRect().top;
-        
-        if (boxTop < triggerBottom){
-            para.classList.add("show");
-        }else {
-            para.classList.remove("show");
-        }
-    })
+    animate(boxes, "show");
+    animate(paras, "show");
+    animate(opacity, "full")
 }
 
 const allSections = document.querySelectorAll("section")
@@ -62,7 +38,7 @@ const redArrows = document.querySelectorAll(".left-arrow")
 redArrows.forEach(arrow => {
     //anymation event
     arrow.addEventListener("click", () => {
-        
+    
         let currentSection = arrow.parentElement.parentElement.parentElement.parentElement
         currentSection.classList.toggle("section-spin")
 
