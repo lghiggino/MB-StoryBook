@@ -35,8 +35,14 @@ function gainOpacity(){
 }
 
 window.addEventListener("scroll", () => {
+    const body = document.querySelector("body")
     console.log(window.scrollY)
     console.log(window.scrollMaxY)
+    // console.log(body.scrollHeight)
+    // console.log(window.innerHeight)
+    if (window.scrollY / window.scrollMaxY >= 0.10){
+        body.style.backgroundColor = "red";
+    }
 })
 
 
