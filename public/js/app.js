@@ -18,14 +18,6 @@ tabs.forEach(tab => {
     });
 });
 
-// Retrieving data from Firebase
-// database.collection("userSubmits").get().then( (snapshot) => {
-//     snapshot.docs.forEach(doc => {
-//         console.log(doc.data())
-//     })
-// })
-
-
 // CTA BUTTONS
 const formButtons = document.querySelectorAll(".form-button")
 

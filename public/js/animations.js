@@ -25,6 +25,27 @@ function scrollY(){
     animate(opacity, "full")
 }
 
+// //inside an element scrollY
+// function elementScrollY(parentElementId, childElementId){
+    
+//     let scrollParent = document.getElementById(parentElementId);
+//     console.log(scrollParent)
+//     console.log(scrollParent.getBoundingClientRect())
+//     let scrollChild = document.getElementById(childElementId);
+//     console.log(scrollChild.getBoundingClientRect())
+//     scrollParent.addEventListener("scroll", () => {
+//         const triggerBottom = scrollParent.innerHeight / 6 * 4
+
+//         const scrollChild = scrollParent.getElementById(childElementId);
+//         const scrollChildTop = scrollChild.getBoundingClientRect()
+//         console.log (scrollChildTop)
+//     })
+    
+// }
+
+// elementScrollY("got-analytics-installed-intro", "firstCard")
+
+
 // const allSections = document.querySelectorAll("section")
 //     allSections.forEach(section => {
 //         console.log(section.getBoundingClientRect())
