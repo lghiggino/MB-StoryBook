@@ -44,6 +44,7 @@ formButtons.forEach(button => {
             let name = document.querySelector(`#${sectionId} .name`).value;
             let email = document.querySelector(`#${sectionId} .email`).value;
             let phone = document.querySelector(`#${sectionId} .phone`).value;
+            let website = document.querySelector(`#${sectionId} .website`).value;
             let message = document.querySelector(`#${sectionId} .textarea`).value;
             // console.log(sectionId, name, email, phone, message);
             //send this data to firebase
@@ -52,6 +53,7 @@ formButtons.forEach(button => {
                 "name" : name,
                 "email" : email,
                 "phone" : phone,
+                "website" : website,
                 "message" : message,
             })
             //modal popup
@@ -70,6 +72,7 @@ formButtons.forEach(button => {
             let name = document.querySelector(`#${sectionId} .name`).value;
             let email = document.querySelector(`#${sectionId} .email`).value;
             let phone = document.querySelector(`#${sectionId} .phone`).value;
+            let website = document.querySelector(`#${sectionId} .website`).value;
             let message = document.querySelector(`#${sectionId} .textarea`).value;
             // console.log(sectionId, proLook, thirdParty, adFree, simpleContact, relevantContent, maintained, name, email, phone, message);
             //send this data to firebase
@@ -78,6 +81,7 @@ formButtons.forEach(button => {
                 "name" : name,
                 "email" : email,
                 "phone" : phone,
+                "website" : website,
                 "message" : message,
                 "proLook": proLook,
                 "thirdParty" : thirdParty,
@@ -102,6 +106,7 @@ formButtons.forEach(button => {
             let name = document.querySelector(`#${sectionId} .name`).value;
             let email = document.querySelector(`#${sectionId} .email`).value;
             let phone = document.querySelector(`#${sectionId} .phone`).value;
+            let website = document.querySelector(`#${sectionId} .website`).value;
             let message = document.querySelector(`#${sectionId} .textarea`).value;
             // console.log(sectionId, easyUI, consistentUI, easyUX, seoOptimal,  mobileOptimal, speedOptimal, name, email, phone, message);
             //send this data to firebase
@@ -110,6 +115,7 @@ formButtons.forEach(button => {
                 "name" : name,
                 "email" : email,
                 "phone" : phone,
+                "website" : website,
                 "message" : message,
                 "easyUI" : easyUI,
                 "consistentUI" : consistentUI,
