@@ -1,5 +1,3 @@
-console.log("Boxes animation are on boxes.js")
-
 window.addEventListener("scroll", scrollY)
 scrollY()
 
@@ -32,8 +30,6 @@ function scrollY(){
 //         console.log(section.getBoundingClientRect())
 //     })
 
-
-console.log("Red Arrows are on")
 const redArrows = document.querySelectorAll(".left-arrow")
 redArrows.forEach(arrow => {
     //anymation event
