@@ -33,6 +33,7 @@ const formButtons = document.querySelectorAll(".form-button")
 const modal = document.querySelector(".modal")
 const modalCloseButton = document.querySelector(".modal-close")
 modalCloseButton.addEventListener("click", () => {modal.classList.remove("is-active")})
+modal.addEventListener("click", () => {modal.classList.remove("is-active")})
 
 formButtons.forEach(button => {
     //the section ID in which the button is located
