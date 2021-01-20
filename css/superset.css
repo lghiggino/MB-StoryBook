@@ -149,7 +149,7 @@ body{
 /* PARALLAX IMAGES */
 .bgimg{
   position: relative;
-  min-height: 50vh;
+  min-height: 30vh;
   margin: 0 auto;
   background-size: cover;
   background-attachment: fixed;
@@ -181,3 +181,4 @@ body{
 .position-relative-div{
   position: relative;
 }
+

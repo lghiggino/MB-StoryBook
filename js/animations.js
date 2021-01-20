@@ -4,7 +4,7 @@ window.addEventListener("scroll", scrollY)
 scrollY()
 
 function scrollY(){
-    const triggerBottom = window.innerHeight / 5.3 * 4;
+    const triggerBottom = window.innerHeight / 6 * 4;
 
     const boxes = document.querySelectorAll(".box")
     const paras = document.querySelectorAll(".para");
