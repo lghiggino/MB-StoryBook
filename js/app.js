@@ -18,36 +18,107 @@ tabs.forEach(tab => {
     });
 });
 
-// Firebase Forms
-database.collection("userSubmits").get().then( (snapshot) => {
-    snapshot.docs.forEach(doc => {
-        console.log(doc.data())
-    })
-})
+// Retrieving data from Firebase
+// database.collection("userSubmits").get().then( (snapshot) => {
+//     snapshot.docs.forEach(doc => {
+//         console.log(doc.data())
+//     })
+// })
 
 
+// CTA BUTTONS
+const formButtons = document.querySelectorAll(".form-button")
 
+// Modal functionalities and modal close action
+const modal = document.querySelector(".modal")
+const modalCloseButton = document.querySelector(".modal-close")
+modalCloseButton.addEventListener("click", () => {modal.classList.remove("is-active")})
 
-
-//INSIDE THE SUBMIT BUTTONS
-
-// Collect the checkbox checks 
-// Collect the textInputs values
-// Collect the textArea values
-
-
-
-const firstDiamondButton = document.querySelector("#do-you-have-a-website-submit");
-const firstCheckIdButton = document.querySelector("#firstCheckId");
-const secondCheckIdButton = document.querySelector("#secondCheckId" );
-const thirdCheckIdButton = document.querySelector("#thirdCheckId" );
-const fourthCheckIdButton = document.querySelector("#fourthCheckId");
-
-firstDiamondButton.addEventListener("click", () => {
-   console.log(
-    firstCheckIdButton.name, firstCheckIdButton.checked,
-    secondCheckIdButton.name, secondCheckIdButton.checked,
-    thirdCheckIdButton.name, thirdCheckIdButton.checked, 
-    fourthCheckIdButton.name, fourthCheckIdButton.checked,
-   ) 
+formButtons.forEach(button => {
+    //the section ID in which the button is located
+    let sectionId = button.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.id;
+    if (sectionId !== "is-site-trustworthy-submit" && sectionId !== "is-site-effective-submit"){
+        button.addEventListener("click", (e) => {
+            e.preventDefault();
+            let name = document.querySelector(`#${sectionId} .name`).value;
+            let email = document.querySelector(`#${sectionId} .email`).value;
+            let phone = document.querySelector(`#${sectionId} .phone`).value;
+            let message = document.querySelector(`#${sectionId} .textarea`).value;
+            // console.log(sectionId, name, email, phone, message);
+            //send this data to firebase
+            database.collection("userSubmits").add({
+                "sectionId" : sectionId,
+                "name" : name,
+                "email" : email,
+                "phone" : phone,
+                "message" : message,
+            })
+            //modal popup
+            modal.classList.add("is-active");
+        })
+    } else if (sectionId === "is-site-trustworthy-submit"){
+        button.addEventListener("click", (e) => {
+            e.preventDefault();
+            //collect the checklist inputs
+            let proLook = document.getElementById("proLook").checked
+            let thirdParty = document.getElementById("thirdParty").checked
+            let adFree = document.getElementById("adFree").checked
+            let simpleContact = document.getElementById("simpleContact").checked
+            let relevantContent = document.getElementById("relevantContent").checked
+            let maintained = document.getElementById("maintained" ).checked
+            let name = document.querySelector(`#${sectionId} .name`).value;
+            let email = document.querySelector(`#${sectionId} .email`).value;
+            let phone = document.querySelector(`#${sectionId} .phone`).value;
+            let message = document.querySelector(`#${sectionId} .textarea`).value;
+            // console.log(sectionId, proLook, thirdParty, adFree, simpleContact, relevantContent, maintained, name, email, phone, message);
+            //send this data to firebase
+            database.collection("userSubmits").add({
+                "sectionId" : sectionId,
+                "name" : name,
+                "email" : email,
+                "phone" : phone,
+                "message" : message,
+                "proLook": proLook,
+                "thirdParty" : thirdParty,
+                "adFree" : adFree,
+                "simpleContact": simpleContact,
+                "relevantContent" : relevantContent,
+                "maintained" : maintained,
+            })
+             //modal popup
+            modal.classList.add("is-active");
+        })
+    } else if (sectionId === "is-site-effective-submit"){
+        button.addEventListener("click", (e) => {
+            e.preventDefault();
+            //collect the checklist inputs
+            let easyUI = document.getElementById("easyUI").checked
+            let consistentUI = document.getElementById("consistentUI").checked
+            let easyUX = document.getElementById("easyUX").checked
+            let seoOptimal = document.getElementById("seoOptimal").checked
+            let mobileOptimal = document.getElementById("mobileOptimal").checked
+            let speedOptimal = document.getElementById("speedOptimal").checked
+            let name = document.querySelector(`#${sectionId} .name`).value;
+            let email = document.querySelector(`#${sectionId} .email`).value;
+            let phone = document.querySelector(`#${sectionId} .phone`).value;
+            let message = document.querySelector(`#${sectionId} .textarea`).value;
+            // console.log(sectionId, easyUI, consistentUI, easyUX, seoOptimal,  mobileOptimal, speedOptimal, name, email, phone, message);
+            //send this data to firebase
+            database.collection("userSubmits").add({
+                "sectionId" : sectionId,
+                "name" : name,
+                "email" : email,
+                "phone" : phone,
+                "message" : message,
+                "easyUI" : easyUI,
+                "consistentUI" : consistentUI,
+                "easyUX" : easyUX,
+                "seoOptimal" : seoOptimal,
+                "mobileOptimal" : mobileOptimal,
+                "speedOptimal" : speedOptimal,
+            })
+             //modal popup
+            modal.classList.add("is-active");
+        })
+    }
 })

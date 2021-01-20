@@ -27,10 +27,10 @@ function scrollY(){
     animate(opacity, "full")
 }
 
-const allSections = document.querySelectorAll("section")
-    allSections.forEach(section => {
-        console.log(section.getBoundingClientRect())
-    })
+// const allSections = document.querySelectorAll("section")
+//     allSections.forEach(section => {
+//         console.log(section.getBoundingClientRect())
+//     })
 
 
 console.log("Red Arrows are on")

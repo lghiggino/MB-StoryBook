@@ -169,14 +169,21 @@
 						<div class="field">
 							<label class="label">Name</label>
 							<div class="control">
-							  <input class="input" type="text" placeholder="e.g Alex Smith" name="name">
+							  <input class="input name" type="text" placeholder="e.g Alex Smith" name="name">
 							</div>
 						  </div>
 						  
 						  <div class="field">
 							<label class="label">Email</label>
 							<div class="control">
-							  <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com" name="email">
+							  <input class="input email" type="email" placeholder="e.g. alexsmith@gmail.com" name="email">
+							</div>
+						  </div>
+
+						  <div class="field">
+							<label class="label">Phone</label>
+							<div class="control">
+							  <input class="input phone" type="text" placeholder="(21) 12345678" name="phone">
 							</div>
 						  </div>
 
@@ -189,7 +196,7 @@
 						<!-- BULMA BUTTON -->
 						<div class="field is-grouped">
 							<div class="control">
-								<button class="button is-link" >Lets Build Together</button>
+								<button class="button is-link form-button" >Lets Build Together</button>
 							</div>
 						</div>	
 					</div>	
@@ -304,7 +311,7 @@
 		<!-- END OF CARD -->
 
 		<!-- CTA SECTION -->
-		<section class="section is-hidden mt-6">
+		<section class="section is-hidden mt-6" id="got-analytics-installed-submit">
 			<div class="container">	
 				<div class="columns is-multiline is-vcentered">
 					<!-- START MAIN COLUMN -->
@@ -317,27 +324,34 @@
 						<div class="field">
 							<label class="label">Name</label>
 							<div class="control">
-							<input class="input" type="text" placeholder="e.g Alex Smith">
+							  <input class="input name" type="text" placeholder="e.g Alex Smith" name="name">
 							</div>
-						</div>
-						
-						<div class="field">
+						  </div>
+						  
+						  <div class="field">
 							<label class="label">Email</label>
 							<div class="control">
-							<input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+							  <input class="input email" type="email" placeholder="e.g. alexsmith@gmail.com" name="email">
 							</div>
-						</div>
+						  </div>
 
-						<div class="field">
+						  <div class="field">
+							<label class="label">Phone</label>
 							<div class="control">
-							<textarea class="textarea is-primary" placeholder="Primary textarea"></textarea>
+							  <input class="input phone" type="text" placeholder="(21) 12345678" name="phone">
 							</div>
-						</div>
+						  </div>
+
+						  <div class="field">
+							<div class="control">
+							  <textarea class="textarea is-primary" placeholder="Primary textarea" name="message"></textarea>
+							</div>
+						  </div>
 
 						<!-- BULMA BUTTON -->
 						<div class="field is-grouped">
 							<div class="control">
-								<button class="button is-link" id="do-you-have-a-website-submit">Lets Build Together</button>
+								<button class="button is-link form-button">Lets Build Together</button>
 							</div>
 						</div>	
 					</div>	
@@ -462,7 +476,7 @@
 		<!-- END OF CARD -->
 
 		<!-- CTA SECTION -->
-		<section class="section is-hidden mt-6">
+		<section class="section is-hidden mt-6" id="is-site-effective-submit">
 			<div class="container">	
 				<div class="columns is-multiline is-vcentered">
 					<!-- START MAIN COLUMN -->
@@ -475,27 +489,34 @@
 						<div class="field">
 							<label class="label">Name</label>
 							<div class="control">
-							<input class="input" type="text" placeholder="e.g Alex Smith">
+							  <input class="input name" type="text" placeholder="e.g Alex Smith" name="name">
 							</div>
-						</div>
-						
-						<div class="field">
+						  </div>
+						  
+						  <div class="field">
 							<label class="label">Email</label>
 							<div class="control">
-							<input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+							  <input class="input email" type="email" placeholder="e.g. alexsmith@gmail.com" name="email">
 							</div>
-						</div>
+						  </div>
 
-						<div class="field">
+						  <div class="field">
+							<label class="label">Phone</label>
 							<div class="control">
-							<textarea class="textarea is-primary" placeholder="Primary textarea"></textarea>
+							  <input class="input phone" type="text" placeholder="(21) 12345678" name="phone">
 							</div>
-						</div>
+						  </div>
+
+						  <div class="field">
+							<div class="control">
+							  <textarea class="textarea is-primary" placeholder="Primary textarea" name="message"></textarea>
+							</div>
+						  </div>
 
 						<!-- BULMA BUTTON -->
 						<div class="field is-grouped">
 							<div class="control">
-								<button class="button is-link" id="do-you-have-a-website-submit">Lets Build Together</button>
+								<button class="button is-link form-button">Lets Build Together</button>
 							</div>
 						</div>	
 					</div>	
@@ -552,31 +573,27 @@
 							<div class="field">
 								<div class="control">
 									<label class="checkbox">
-										<input type="checkbox" id="easyUI" name="easyUI" value="easyUI">
+										<input type="checkbox" id="proLook" name="easyUI" value="easyUI">
 										Does your website look professional?
 									</label>
 									<label class="checkbox">
-										<input type="checkbox" id="consistentUI" name="consistentUI" value="consistentUI">
+										<input type="checkbox" id="thirdParty" name="consistentUI" value="consistentUI">
 										Does it use third party citations and testemonials?
 									</label>
 									<label class="checkbox">
-										<input type="checkbox" id="seoOptimal" name="seoOptimal" value="seoOptimal">
+										<input type="checkbox" id="adFree" name="seoOptimal" value="seoOptimal">
 										Is it ad free?
 									</label>
 									<label class="checkbox">
-										<input type="checkbox" id="easyUX" name="easyUX" value="easyUX">
+										<input type="checkbox" id="simpleContact" name="easyUX" value="easyUX">
 										Does it make contact as simple and direct as possible?
 									</label>
 									<label class="checkbox">
-										<input type="checkbox" id="mobileOptimal" name="mobileOptimal" value="mobileOptimal">
+										<input type="checkbox" id="relevantContent" name="mobileOptimal" value="mobileOptimal">
 										Does it have relevant content?
 									</label>
 									<label class="checkbox">
-										<input type="checkbox" id="speedOptimal" name="speedOptimal" value="speedOptimal">
-										Has little to no promo content?
-									</label>
-									<label class="checkbox">
-										<input type="checkbox" id="speedOptimal" name="speedOptimal" value="speedOptimal">
+										<input type="checkbox" id="maintained" name="speedOptimal" value="speedOptimal">
 										Is mantained and updated regularly?
 									</label>
 									
@@ -627,7 +644,7 @@
 		<!-- END OF CARD -->
 
 		<!-- CTA SECTION -->
-		<section class="section is-hidden mt-6">
+		<section class="section is-hidden mt-6" id="is-site-trustworthy-submit">
 			<div class="container">	
 				<div class="columns is-multiline is-vcentered">
 					<!-- START MAIN COLUMN -->
@@ -640,27 +657,34 @@
 						<div class="field">
 							<label class="label">Name</label>
 							<div class="control">
-							<input class="input" type="text" placeholder="e.g Alex Smith">
+								<input class="input name" type="text" placeholder="e.g Alex Smith" name="name">
 							</div>
-						</div>
-						
-						<div class="field">
+							</div>
+							
+							<div class="field">
 							<label class="label">Email</label>
 							<div class="control">
-							<input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+								<input class="input email" type="email" placeholder="e.g. alexsmith@gmail.com" name="email">
 							</div>
-						</div>
+							</div>
 
-						<div class="field">
+							<div class="field">
+							<label class="label">Phone</label>
 							<div class="control">
-							<textarea class="textarea is-primary" placeholder="Primary textarea"></textarea>
+								<input class="input phone" type="text" placeholder="(21) 12345678" name="phone">
 							</div>
-						</div>
+							</div>
+
+							<div class="field">
+							<div class="control">
+								<textarea class="textarea is-primary" placeholder="Primary textarea" name="message"></textarea>
+							</div>
+							</div>
 
 						<!-- BULMA BUTTON -->
 						<div class="field is-grouped">
 							<div class="control">
-								<button class="button is-link" id="do-you-have-a-website-submit">Lets Build Together</button>
+								<button class="button is-link form-button">Lets Build Together</button>
 							</div>
 						</div>	
 					</div>	
@@ -745,7 +769,7 @@
 		<!-- END OF CARD -->
 
 		<!-- CTA SECTION -->
-		<section class="section is-hidden">
+		<section class="section is-hidden mt-6" id="need-new-business-now-submit">
 			<div class="container">	
 				<div class="columns is-multiline is-vcentered">
 					<!-- START MAIN COLUMN -->
@@ -758,27 +782,34 @@
 						<div class="field">
 							<label class="label">Name</label>
 							<div class="control">
-							<input class="input" type="text" placeholder="e.g Alex Smith">
+								<input class="input name" type="text" placeholder="e.g Alex Smith" name="name">
 							</div>
-						</div>
-						
-						<div class="field">
+							</div>
+							
+							<div class="field">
 							<label class="label">Email</label>
 							<div class="control">
-							<input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+								<input class="input email" type="email" placeholder="e.g. alexsmith@gmail.com" name="email">
 							</div>
-						</div>
+							</div>
 
-						<div class="field">
+							<div class="field">
+							<label class="label">Phone</label>
 							<div class="control">
-							<textarea class="textarea is-primary" placeholder="Primary textarea"></textarea>
+								<input class="input phone" type="text" placeholder="(21) 12345678" name="phone">
 							</div>
-						</div>
+							</div>
+
+							<div class="field">
+							<div class="control">
+								<textarea class="textarea is-primary" placeholder="Primary textarea" name="message"></textarea>
+							</div>
+							</div>
 
 						<!-- BULMA BUTTON -->
 						<div class="field is-grouped">
 							<div class="control">
-								<button class="button is-link" id="do-you-have-a-website-submit">Lets Build Together</button>
+								<button class="button is-link form-button">Lets Build Together</button>
 							</div>
 						</div>	
 					</div>	
@@ -898,7 +929,7 @@
 		<!-- END OF CARD -->
 
 		<!-- CTA SECTION -->
-		<section class="section is-hidden mt-6">
+		<section class="section is-hidden mt-6" id="seo-and-ppc-submit">
 			<div class="container">	
 				<div class="columns is-multiline is-vcentered">
 					<!-- START MAIN COLUMN -->
@@ -911,27 +942,34 @@
 						<div class="field">
 							<label class="label">Name</label>
 							<div class="control">
-							<input class="input" type="text" placeholder="e.g Alex Smith">
+								<input class="input name" type="text" placeholder="e.g Alex Smith" name="name">
 							</div>
-						</div>
-						
-						<div class="field">
+							</div>
+							
+							<div class="field">
 							<label class="label">Email</label>
 							<div class="control">
-							<input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+								<input class="input email" type="email" placeholder="e.g. alexsmith@gmail.com" name="email">
 							</div>
-						</div>
+							</div>
 
-						<div class="field">
+							<div class="field">
+							<label class="label">Phone</label>
 							<div class="control">
-							<textarea class="textarea is-primary" placeholder="Primary textarea"></textarea>
+								<input class="input phone" type="text" placeholder="(21) 12345678" name="phone">
 							</div>
-						</div>
+							</div>
+
+							<div class="field">
+							<div class="control">
+								<textarea class="textarea is-primary" placeholder="Primary textarea" name="message"></textarea>
+							</div>
+							</div>
 
 						<!-- BULMA BUTTON -->
 						<div class="field is-grouped">
 							<div class="control">
-								<button class="button is-link" id="do-you-have-a-website-submit">Lets Build Together</button>
+								<button class="button is-link form-button">Lets Build Together</button>
 							</div>
 						</div>	
 					</div>	
@@ -990,6 +1028,17 @@
           
     </section>
 </footer>
+
+
+<div class="modal">
+	<div class="modal-background"></div>
+	<div class="modal-content">
+	  <p class="image is-4by3">
+		<img src="https://bulma.io/images/placeholders/1280x960.png" alt="">
+	  </p>
+	</div>
+	<button class="modal-close is-large" aria-label="close"></button>
+  </div>
 
 <!--  
 <a href='https://www.freepik.com/vectors/arrow'>Arrow vector created by vectorjuice - www.freepik.com</a>
