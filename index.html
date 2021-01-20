@@ -11,9 +11,14 @@
     <link rel='stylesheet' type='text/css' media='screen' href='./css/superset.css'>
 	<link rel='stylesheet' type='text/css' media='screen' href='./css/animations.css'>
     <script src="https://kit.fontawesome.com/33c90e5f6c.js" crossorigin="anonymous"></script>
-    <script src='./js/app.js' defer></script>
-    <script src='./js/animations.js' defer></script>
-    <script src='./js/analytics.js' defer></script>
+	
+	<!-- Firebase functionalities-->
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
+	
+	<!-- project JS files are in the bottom of the body -->
   </head>
 </head>
 <body>
@@ -151,7 +156,7 @@
 		<!-- END OF CARD -->
 
 		<!-- CTA SECTION -->
-		<section class="section is-hidden mt-6">
+		<section class="section is-hidden mt-6" id="got-a-website-submit">
 			<div class="container">	
 				<div class="columns is-multiline is-vcentered">
 					<!-- START MAIN COLUMN -->
@@ -164,27 +169,27 @@
 						<div class="field">
 							<label class="label">Name</label>
 							<div class="control">
-							  <input class="input" type="text" placeholder="e.g Alex Smith">
+							  <input class="input" type="text" placeholder="e.g Alex Smith" name="name">
 							</div>
 						  </div>
 						  
 						  <div class="field">
 							<label class="label">Email</label>
 							<div class="control">
-							  <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+							  <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com" name="email">
 							</div>
 						  </div>
 
 						  <div class="field">
 							<div class="control">
-							  <textarea class="textarea is-primary" placeholder="Primary textarea"></textarea>
+							  <textarea class="textarea is-primary" placeholder="Primary textarea" name="message"></textarea>
 							</div>
 						  </div>
 
 						<!-- BULMA BUTTON -->
 						<div class="field is-grouped">
 							<div class="control">
-								<button class="button is-link" id="do-you-have-a-website-submit">Lets Build Together</button>
+								<button class="button is-link" >Lets Build Together</button>
 							</div>
 						</div>	
 					</div>	
@@ -991,6 +996,30 @@
 <a href='https://www.freepik.com/vectors/business'>Business vector created by vectorjuice - www.freepik.com</a>
 IMAGES from PEXELS.COM: Thanks to burst, canva studio, negative sapce, pixabay and snapwire
 -->
+
+<!-- FIREBASE APP, FIRESTORE AND ANALYTICS -->
+	<script>
+	// Your web app's Firebase configuration
+	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+	var firebaseConfig = {
+		apiKey: "AIzaSyBMQdopW9Bors6Yc9iFcNxuvcLnRbK3BtI",
+		authDomain: "js-storybook.firebaseapp.com",
+		projectId: "js-storybook",
+		storageBucket: "js-storybook.appspot.com",
+		messagingSenderId: "378018642043",
+		appId: "1:378018642043:web:ea899dce7af3214fb10ade",
+		measurementId: "G-0Z2CY01Q54"
+	};
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+	const database = firebase.firestore();
+	firebase.analytics();
+	</script>
+
+<!-- PROJECT JS FILES -->
+	<script src='./js/app.js' defer></script>
+	<script src='./js/animations.js' defer></script>
+	<script src='./js/analytics.js' defer></script>
 
 </body>
 </html>

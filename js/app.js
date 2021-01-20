@@ -18,6 +18,17 @@ tabs.forEach(tab => {
     });
 });
 
+// Firebase Forms
+database.collection("userSubmits").get().then( (snapshot) => {
+    snapshot.docs.forEach(doc => {
+        console.log(doc.data())
+    })
+})
+
+
+
+
+
 //INSIDE THE SUBMIT BUTTONS
 
 // Collect the checkbox checks 
