@@ -182,3 +182,17 @@ body{
   position: relative;
 }
 
+/* CHECKBOX CONTAINER MEDIAQUERY FOR TABLET */
+@media (max-width: 768px){
+  .control{
+    max-width: 60%;
+    margin: 0 auto;
+  }
+} 
+
+@media (max-width: 516px){
+  .control{
+    max-width: 100%;
+  }
+}
+
