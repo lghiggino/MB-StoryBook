@@ -2,13 +2,16 @@ window.addEventListener("scroll", scrollY)
 scrollY()
 
 function scrollY(){
-    const triggerBottom = window.innerHeight / 6 * 4
+    // const triggerBottom = window.innerHeight / 6 * 4
 
     const boxes = document.querySelectorAll(".box")
     const paras = document.querySelectorAll(".para");
     const opacity = document.querySelectorAll(".opacity");
+    const zoom = document.querySelectorAll(".zoom")
 
-    function animate(classSelector, className){
+    //triggerBottomValue -> the smaller the value, the earlier the element is animated
+    function animate(classSelector, className, triggerBottomValue = 6){
+        let triggerBottom = window.innerHeight / triggerBottomValue * 4
         classSelector.forEach(item => {
             const itemTop = item.getBoundingClientRect().top;
 
@@ -20,9 +23,10 @@ function scrollY(){
         })
     }
 
-    animate(boxes, "show");
-    animate(paras, "show");
-    animate(opacity, "full")
+    animate(boxes, "show", 6);
+    animate(paras, "show", 6);
+    animate(opacity, "full", 6)
+    animate(zoom, "full", 9)
 
 }
 
