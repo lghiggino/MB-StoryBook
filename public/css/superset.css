@@ -53,6 +53,9 @@ body{
 .diamond-inner-shape.offset{
   left: -17px;
 }
+.diamond-inner-shape.offset2{
+  left: -12px;
+}
 
 .split{
   display: flex;
@@ -171,6 +174,10 @@ body{
 
 .bgimg.image-4{
   background-image: url("../assets/pexels-pixabay-258160.jpg");
+}
+
+.bgimg.image-5{
+  background-image: url("../assets/pexels-luis-ruiz-1774931.jpg");
 }
 
 /* .bgimg-2.box.show{
