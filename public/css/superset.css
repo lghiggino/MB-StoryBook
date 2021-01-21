@@ -1,6 +1,7 @@
 /* BULMA SUPERSETS */
 body{
   overflow-x: hidden;
+  border: 1px solid red;
 }
 
 .section{

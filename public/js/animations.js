@@ -2,7 +2,7 @@ window.addEventListener("scroll", scrollY)
 scrollY()
 
 function scrollY(){
-    const triggerBottom = window.innerHeight / 6 * 4;
+    const triggerBottom = window.innerHeight / 6 * 4
 
     const boxes = document.querySelectorAll(".box")
     const paras = document.querySelectorAll(".para");
@@ -23,6 +23,7 @@ function scrollY(){
     animate(boxes, "show");
     animate(paras, "show");
     animate(opacity, "full")
+
 }
 
 // //inside an element scrollY
