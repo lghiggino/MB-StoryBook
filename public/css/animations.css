@@ -113,14 +113,14 @@
     background: #1684a7;
 }
 
-.animationContainer.zoom.full{
+.animationContainer.zoom.full, .animationContainer:hover{
     height: 300px;
     width: 90%;
     border-radius: 5px;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-.animationContainer.zoom.tall.full{
+.animationContainer.zoom.tall.full, .animationContainer.tall:hover{
     height: 400px;
 }
 
