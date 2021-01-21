@@ -24,7 +24,7 @@ function scrollY(){
     }
 
     animate(boxes, "show", 6);
-    animate(paras, "show", 6);
+    animate(paras, "show", 5);
     animate(opacity, "full", 6)
     animate(zoom, "full", 9)
 
